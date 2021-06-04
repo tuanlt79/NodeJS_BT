@@ -19,16 +19,28 @@
   </head>
   <body>
     <div class="container">
-      <div class="form-group">
-        <label for="exampleInputEmail1">Nhập số</label>
-        <input
-          type="number"
-          class="form-control"
-          id="inputNhap"
-          placeholder="Nhập số"
-        />
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nhập số</label>
+            <input
+              type="number"
+              class="form-control"
+              id="inputNhap"
+              placeholder="Nhập số 0-100"
+            />
+          </div>
+          <button id="btnDoan" type="submit" class="btn btn-success">
+            Đoán
+          </button>
+          <div class="text-danger mt-3" id="txtKQ"></div>
+        </div>
+        <div class="col-6">
+          <div id="historyDoan">
+            <h4 class="text-">Lich Sử Đoán</h4>
+          </div>
+        </div>
       </div>
-      <button id="btnDoan" class="btn btn-success">Đoán</button>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
